@@ -1,0 +1,109 @@
+.portfolio-wrapper {
+  min-height: calc(100vh - 100px);
+  padding-top: 100px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+}
+.projects-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.project-row {
+  background-color: #DDDDDD;
+  width: 100%;
+  height: 30vw;
+  margin: 0 0 30px 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+// .project-row:hover {
+//   animation-name: slideLeft;
+//   -webkit-animation-name: slideLeft;
+
+//   animation-duration: 1s;
+//   -webkit-animation-duration: 1s;
+
+//   animation-timing-function: ease-in-out;
+//   -webkit-animation-timing-function: ease-in-out;
+
+//   visibility: visible !important;
+// }
+.portfolio-box {
+  min-height: 100%;
+  width: 100%;
+}
+.portfolio-row {
+  display: flex;
+}
+
+// Project row backgrounds
+#inline {
+  background-image: url("inline-home-page.png");
+  background-size: cover;
+  background-position: center;
+}
+#unify {
+
+}
+#app-3 {
+
+}
+
+// For project description slide effects
+figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+figcaption {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+
+  opacity: 0;
+  bottom: 0;
+  right: -30%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+figcaption h3 {
+  margin-bottom: 10px;
+}
+figcaption p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+figcaption a {
+  color: white;
+  text-decoration: none;
+}
+figcaption a > p {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  font-weight: bold;
+}
+figcaption a:hover {
+  color: white;
+  text-decoration: none;
+}
+figure:hover figcaption {
+  opacity: 1;
+  right: 0;
+}
+.cap-right figcaption { bottom: 0; right: -30%; }
+.cap-right:hover figcaption { right: 0; }
+

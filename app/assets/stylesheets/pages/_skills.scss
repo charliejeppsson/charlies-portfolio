@@ -1,0 +1,59 @@
+
+// General
+.skills-wrapper {
+  min-height: calc(100vh - 100px);
+  padding-top: 100px;
+  width: 100%;
+  // background-color: white;
+  display: flex;
+  align-items: center;
+}
+.skills-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.skill-logo {
+  height: 120px;
+  color: $gray;
+}
+
+// Back-end skills
+.back-end-container {
+  background-color: lightgrey;
+  height: 300px;
+  margin-bottom: 100px;
+}
+.back-end-skill-title {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-end-skill-logos {
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// Front-end skills
+.front-end-container {
+  background-color: lightgrey;
+  height: 500px;
+  margin-bottom: 100px;
+}
+.front-end-skill-title {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front-end-skill-logos {
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// Other skills

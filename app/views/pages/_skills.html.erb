@@ -1,0 +1,113 @@
+
+<div class="general-wrapper">
+  <div class="skills-wrapper">
+    <div class="container skills-container">
+      <div class="row header-row">
+        <h1>My skills</h1>
+      </div>
+
+      <div id="skills-slider" class="carousel slide" data-ride="carousel">
+        <!-- Slider indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#skills-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#skills-slider" data-slide-to="1"></li>
+          <li data-target="#skills-slider" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Slide wrapper -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <div class="container back-end-container">
+              <div class="row back-end-skill-title">
+                <h3>Back-end</h3>
+              </div>
+              <div class="row back-end-skill-logos">
+                <div class="skill-frame">
+                  <%= image_tag "ruby-logo.png", class: "skill-logo", title: "Ruby" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "rails-logo.png", class: "skill-logo", title: "Ruby on Rails" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "sql-logo.png", class: "skill-logo", title: "SQL" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "postgresql-logo.svg", class: "skill-logo", title: "PostgreSQL" %>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container front-end-container">
+              <div class="row front-end-skill-title">
+                <h3>Front-end</h3>
+              </div>
+              <div class="row front-end-skill-logos">
+                <div class="skill-frame">
+                  <%= image_tag "html5-logo.svg", class: "skill-logo", title: "HTML5" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "css3-logo.svg", class: "skill-logo", title: "CSS3" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "js-logo.svg", class: "skill-logo", title: "JavaScript" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "jquery-logo.svg", class: "skill-logo", title: "jQuery" %>
+                </div>
+              </div>
+              <div class="row front-end-skill-logos">
+                <div class="skill-frame">
+                  <%= image_tag "bootstrap-logo.svg", class: "skill-logo", title: "Bootstrap" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "sass-logo.svg", class: "skill-logo", title: "SASS" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "sketch-logo.svg", class: "skill-logo", title: "Sketch" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "figma-logo.png", class: "skill-logo", title: "Figma" %>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container back-end-container">
+              <div class="row back-end-skill-title">
+                <h3>Other</h3>
+              </div>
+              <div class="row back-end-skill-logos">
+                <div class="skill-frame">
+                  <%= image_tag "git-logo.svg", class: "skill-logo", title: "Git" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "github-logo.svg", class: "skill-logo", title: "GitHub" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "heroku-logo.png", class: "skill-logo", title: "Heroku" %>
+                </div>
+                <div class="skill-frame">
+                  <%= image_tag "gandi-logo.png", class: "skill-logo", title: "Gandi" %>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#skills-slider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </a>
+
+          <a class="right carousel-control" href="#skills-slider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

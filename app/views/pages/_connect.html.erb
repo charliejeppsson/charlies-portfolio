@@ -1,0 +1,69 @@
+
+<div class="general-wrapper">
+  <div class="connect-wrapper">
+    <div class="container connect-box">
+      <div class="row header-row">
+        <h1>Connect with me</h1>
+      </div>
+      <div class="row" style="margin: 30px;">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <form action="http://formspree.io/charlie.jeppsson1@gmail.com" method="post">
+            <div class="form-group">
+              <label for="name">Your name:</label>
+              <input name="form-name-input" type="text" name="name" class="form-control" placeholder="Elon Musk" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your email address:</label>
+              <input type="email" name="_replyto" class="form-control" placeholder="elon.musk@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="body">Your message:</label>
+              <textarea name="body" class="form-control" rows="4" placeholder="Dear Charlie..." required></textarea>
+            </div>
+            <button class="btn btn-basic btn-block" class="form-control">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRY TO PREVENT THE REDIRECTION TO FORMSPREE AND THE RECAPTCHA: -->
+<!-- <script>
+  var message = "";
+
+  $("#sendMessage").on("click", function() {
+    message = $("#contactform").serialize();
+    $.ajax({
+      url: "//formspree.io/dynamicrealities@gmail.com",
+      method: "POST",
+      data: {message: message},
+      dataType: "json"
+    });
+    alert('Thanks for the email, we\'ll be in touch promptly.');
+    return false;
+  });
+</script>
+
+<form id="contactform" method="POST">
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon">Name</span>
+      <input name="form-name-input" type="text" name="name" class="form-control" required>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Email</span>
+      <input name="form-email-input" type="email" name="_replyto" class="form-control" required>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Subject</span>
+      <input name="form-subject-input" type="text" name="subject" class="form-control" required>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Description</span>
+      <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
+    </div>
+    <input type="text" name="_gotcha" style="display:none" />
+    <button id="sendMessage">Send</button>
+  </div>
+</form> -->

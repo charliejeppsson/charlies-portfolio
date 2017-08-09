@@ -9,24 +9,24 @@
   padding: 0;
 }
 .about-card {
-  height: 600px;
+  height: 450px;
   display: flex;
 }
 .about-col {
   height: 100%;
   width: 50%;
+
 }
 .about-category {
   // justify-content: center;
   align-items: center;
   margin: 0 20%;
-  font-size: 70px;
+  font-size: 50px;
   text-align: left;
 }
 .about-text {
   padding: 0 10%;
   display: flex;
-  // text-align: justify;
   justify-content: center;
   flex-direction: column;
 }
@@ -47,10 +47,11 @@
   background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('charlie-in-window-filter-1.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .about-business-school-image {
   background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('business-school-3.png');
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -74,7 +75,7 @@
 }
 .about-kth-image {
   background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('kth-2.png');
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -85,11 +86,16 @@
   background-size: cover;
 }
 .about-bootcamp-image {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('bootcamp-group-photo-filter-4.png');
-  background-position: bottom;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('bootcamp-group-photo-filter-5.png');
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
 }
+// .le-wagon-logo {
+//   height: 100px;
+//   left: 50px;
+//   bottom: 20px;
+// }
 
 // Carousel custom design
 // .carousel-indicators li {

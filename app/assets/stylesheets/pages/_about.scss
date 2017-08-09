@@ -16,9 +16,17 @@
   height: 100%;
   width: 50%;
 }
+.about-category {
+  // justify-content: center;
+  align-items: center;
+  margin: 0 20%;
+  font-size: 70px;
+  text-align: left;
+}
 .about-text {
-  padding-right: 10%;
+  padding: 0 10%;
   display: flex;
+  // text-align: justify;
   justify-content: center;
   flex-direction: column;
 }
@@ -26,6 +34,12 @@
   color: $white;
   text-decoration: none;
   font-weight: bold;
+}
+.hyphens {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 // Image styles
@@ -35,7 +49,7 @@
   background-repeat: no-repeat;
 }
 .about-business-school-image {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('business-school-1.jpg');
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('business-school-3.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,10 +61,10 @@
   background-size: cover;
 }
 .about-journalism-image {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('journalism-1.jpg');
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('journalism-3.png');
   background-position: center;
   background-repeat: no-repeat;
-
+  background-size: cover;
 }
 .about-freelance-image {
   background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('freelance.jpg');
@@ -58,17 +72,29 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.about-kth-image {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('kth-2.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-moocs-image {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('moocs-1.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .about-bootcamp-image {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('bootcamp-group-photo-filter-1.jpg');
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), url('bootcamp-group-photo-filter-4.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 // Carousel custom design
-.carousel-indicators li {
-  border: 1px solid $yellow;
-}
-.carousel-indicators .active {
-  background-color: $yellow;
-}
+// .carousel-indicators li {
+//   border: 1px solid $yellow;
+// }
+// .carousel-indicators .active {
+//   background-color: $yellow;
+// }

@@ -5,7 +5,7 @@
   // background-color: $gray;
   display: flex;
   align-items: center;
-
+  margin-bottom: 50px;
 }
 .projects-container {
   width: 100%;
@@ -15,12 +15,18 @@
 .project-row {
   // background-color: #DDDDDD;
   width: 100%;
-  height: 70vh;
-  margin: 0 0 300px 0;
+  height: 500px;
+  margin: 0;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
+}
+.project-descr-wrapper {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
 }
 .portfolio-box {
   min-height: 100%;
@@ -34,14 +40,14 @@
 #inline {
   background-image: url("inline-home-page.png");
   background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  background-position: center;
+  // background-attachment: fixed;
 }
 #unify {
-  background-image: url("unify-home-page-normal.png");
+  background-image: url("unify-home-page-adjusted-2.png");
   background-size: cover;
   background-position: top;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 #app-3 {
 
@@ -57,45 +63,95 @@ figcaption {
   position: absolute;
   display: flex;
   align-items: center;
-  width: 30%;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  padding: 10px 20px;
+
+  color: $white;
+  // padding: 0px 200px;
   text-align: left;
 
-  opacity: 0;
-  bottom: 0;
-  right: -30%;
+  bottom: -92%;
+  left: 0px;
+
   -webkit-transition: all 0.6s ease;
   -moz-transition:    all 0.6s ease;
   -o-transition:      all 0.6s ease;
 }
+.slide-up-caption {
+  bottom: 0 !important;
+  background: rgba(0,0,0,0.8);
+}
+.show-btn {
+  position: absolute;
+  top: 0;
+}
+.show-info {
+  cursor: pointer;
+  background: $black;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+}
+.hide-info {
+  cursor: pointer;
+  top: 10px;
+}
 figcaption h3 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 figcaption p {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
+  text-align: justify;
+}
+figcaption ul {
+  padding-left: 20px;
+}
+figcaption li {
+  font-size: 16px;
 }
 figcaption a {
-  color: white;
+  color: $white;
   text-decoration: none;
 }
 figcaption a > p {
-  color: white;
+  color: $white;
   text-decoration: none;
   margin: 0;
   font-weight: bold;
 }
-figcaption a:hover {
+figcaption a:hover, a p:hover  {
   color: white;
   text-decoration: none;
 }
-figure:hover figcaption {
-  opacity: 1;
-  right: 0;
-}
-.cap-right figcaption { bottom: 0; right: -30%; }
-.cap-right:hover figcaption { right: 0; }
 
+// For responsive text columns
+// .col-2 {
+//   -moz-column-count: 2;
+//   -webkit-column-count: 2;
+//   column-count: 2;
+// }
+
+.skill-logos-small {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.skill-logo-small {
+  height: 25px;
+}
+.skill-frame-small {
+  background-color: $lightgray;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 5px 0;
+}

@@ -1,6 +1,7 @@
 
 .about-wrapper {
-  height: calc(100vh - 100px);
+  height: 100vh;
+  padding-top: 100px;
   width: 100%;
 }
 .about-container {
@@ -34,12 +35,6 @@
   color: $white;
   text-decoration: none;
   font-weight: bold;
-}
-.hyphens {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 
 // Image styles

@@ -1,5 +1,28 @@
 
 .connect-wrapper {
-  height: calc(100vh - 100px);
+  height: 100vh;
+  padding-top: 100px;
   width: 100%;
+}
+.connect-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-row-connect {
+  position: absolute;
+  top: 100px;
+}
+.message-row {
+  width: 100%;
+}
+.connect-btn {
+  background-color: $yellow;
+  color: $black;
+  font-weight: bold;
+}
+.connect-btn:hover {
+  background-color: #d39015;
+  color: black;
 }

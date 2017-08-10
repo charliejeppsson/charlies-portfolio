@@ -5,31 +5,38 @@
       <div class="row header-row">
         <h1>My portfolio</h1>
       </div>
-      <figure class="row project-row cap-right" id="inline">
-        <figcaption>
-          <div>
-            <h3>InLine</h3>
-            <p>Description of the InLine project. This project took around 3 weeks from start to finish and I was responsible for the whole stack.</p>
-            <p>The idea of the application is to digitize physical queuing systems in various B2C businesses, thus giving consumers and clients more time to spend as they wish.</p>
-            <p>Technologies used: Ruby on Rails, JavaScript, HTML, CSS, ActionCable, SQL, ActiveRecord, PostgreSQL, Heroku.</p>
-            <a href="https://inline-app.com" target="_blank"><p>https://inline-app.com</p></a>
-            <a href="https://github.com/charliejeppsson/inline" target="_blank"><p>https://github.com/charliejeppsson/inline</p></a>
-          </div>
-        </figcaption>
-      </figure>
 
-      <figure class="row project-row cap-right" id="unify">
-        <figcaption>
-          <div>
-            <h3>Unify</h3>
-            <p>Description of the Unify project. This project took 10 days from start to finish and it was created in a group of 4 during Le Wagon's full stack coding bootcamp in Barcelona the summer of 2017.</p>
-            <p>The idea of the application is to create the Happn for the professional network.</p>
-            <p>Technologies used: Ruby on Rails, JavaScript, HTML, CSS, ActionCable, SQL, ActiveRecord, PostgreSQL, Heroku.</p>
-            <a href="https://uni-fy.eu" target="_blank"><p>https://uni-fy.eu</p></a>
-            <a href="https://github.com/charliejeppsson/rails-unify" target="_blank"><p>https://github.com/charliejeppsson/rails-unify</p></a>
+      <div id="portfolio-slider" class="carousel slide" data-ride="carousel">
+
+        <!-- Slide wrapper -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <%= render partial: "portfolio_project_2" %>
           </div>
-        </figcaption>
-      </figure>
+          <div class="item">
+            <%= render partial: "portfolio_project_1" %>
+          </div>
+
+          <a class="left carousel-control" href="#portfolio-slider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </a>
+
+          <a class="right carousel-control" href="#portfolio-slider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
+
+          <!-- Slider indicators -->
+          <div class="row">
+            <ul class="carousel-indicators">
+              <li data-target="#portfolio-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#portfolio-slider" data-slide-to="1"></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   </div>
 </div>

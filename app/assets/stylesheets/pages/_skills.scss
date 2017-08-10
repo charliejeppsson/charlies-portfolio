@@ -15,30 +15,42 @@
 .skill-frame {
   background-color: $lightgray;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
 }
 .skill-logo {
-  height: 120px;
+  height: 80px;
+}
+.skill-title {
+  margin: 20px 0;
+  position: absolute;
+  top: 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 // Back-end skills
 .back-end-container {
-  // background-color: lightgrey;
-  height: 600px;
-  margin-bottom: 100px;
-}
-.back-end-skill-title {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.back-end-skill-logos {
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // margin-bottom: 100px;
+}
+// .back-end-skill-title {
+//   height: 100px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.back-end-skill-logos {
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,18 +58,20 @@
 
 // Front-end skills
 .front-end-container {
-  //  background-color: lightgrey;
-  height: 600px;
-  margin-bottom: 100px;
-}
-.front-end-skill-title {
-  height: 100px;
+  height: 500px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  // margin-bottom: 100px;
 }
+// .front-end-skill-title {
+//   height: auto;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 .front-end-skill-logos {
-  height: 250px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;

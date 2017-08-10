@@ -38,13 +38,13 @@
 
 // Project row backgrounds
 #inline {
-  background-image: url("inline-home-page.png");
+  background-image: image-url("inline-home-page.png");
   background-size: cover;
   background-position: center;
   // background-attachment: fixed;
 }
 #unify {
-  background-image: url("unify-home-page-adjusted-2.png");
+  background-image: image-url("unify-home-page-adjusted-2.png");
   background-size: cover;
   background-position: top;
   // background-attachment: fixed;

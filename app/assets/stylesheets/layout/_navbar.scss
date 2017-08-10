@@ -13,22 +13,44 @@
   font-family: $header-font;
 }
 
-#my-navbar-name {
+/* Navbar left section */
+.my-navbar-left {
+  margin: 0;
+}
+.my-navbar-left-big p {
+  font-size: 20.5px;
+  margin: 0;
+}
+.my-navbar-left-big a {
   font-size: 30px;
 }
+.my-navbar-left-small p {
+  font-size: 12.3px;
+  margin: 0;
+  padding: 0;
+}
+.my-navbar-left-small a {
+  font-size: 18px;
+  padding: 0;
+}
 
-/* Navbar right section (with form, links, button) */
-.my-navbar-right {
+/* Navbar right section */
+.my-navbar-right-big {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.my-navbar-right a {
+.my-navbar-right-big a {
   font-size: 18px;
 }
-.my-navbar-left p {
-  font-size: 20.5px;
-  margin: 0;
+.my-navbar-right-small a {
+  font-size: 11px;
+}
+.my-navbar-right-small i {
+  font-size: 25px;
+}
+.my-navbar-right-small .dropdown-menu {
+  min-width: 100px;
 }
 
 /* Navbar item */

@@ -1,6 +1,6 @@
 
 .about-wrapper {
-  height: 100vh;
+  height: auto;
   padding-top: 100px;
   width: 100%;
 }
@@ -15,11 +15,10 @@
 }
 .about-col {
   height: 100%;
-  width: 50%;
-
+  display: flex;
 }
 .about-category {
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
   margin: 0 20%;
   font-size: 50px;
@@ -30,6 +29,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-self: center;
 }
 .about-text a {
   color: $white;
@@ -37,7 +37,7 @@
   font-weight: bold;
 }
 
-// Image styles
+// Image styles for large viewports
 .about-intro-image {
   background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), image-url('charlie-in-window-filter-1.jpg');
   background-position: bottom;
@@ -86,6 +86,92 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// Custom styles for small viewports
+
+.about-card-small {
+  height: 150px;
+  display: flex;
+  overflow: scroll;
+}
+.about-image-small {
+  height: 300px;
+}
+.intro-title {
+  font-size: 35px;
+  text-align: left;
+}
+.about-category-card-small {
+  height: 450px;
+  margin: 0;
+}
+.about-category-small {
+  margin: 0 20%;
+  font-size: 30px;
+  text-align: center;
+}
+.about-text-small {
+  padding: 0 20%;
+  text-align: center;
+}
+.align-content-vertically {
+  display: flex;
+  align-items: center;
+}
+.about-text-small a {
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.about-intro-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 40%, rgba(22,22,22,1.0) 100%), image-url('charlie-in-window-filter-1.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-business-school-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 40%, rgba(22,22,22,1.0) 100%), image-url('business-school-3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-banking-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(22,22,22,1.0) 100%), image-url('nyc-skyline.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-journalism-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 40%, rgba(22,22,22,1.0) 100%), image-url('journalism-3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-freelance-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(22,22,22,1.0) 100%), image-url('freelance.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-kth-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 40%, rgba(22,22,22,1.0) 100%), image-url('kth-2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-moocs-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 50%, rgba(22,22,22,1.0) 100%), image-url('moocs-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-bootcamp-image-small {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 30%, rgba(22,22,22,1.0) 100%), image-url('bootcamp-group-photo-filter-4.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 // .le-wagon-logo {
 //   height: 100px;
 //   left: 50px;

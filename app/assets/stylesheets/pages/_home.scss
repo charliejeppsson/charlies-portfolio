@@ -22,9 +22,11 @@ h2 {
 h3 {
   margin: 0;
 }
-
+.no-margin {
+  margin: 0 !important;
+}
 .general-wrapper {
-  min-height: calc(100vh);
+  height: auto;
   width: 100%;
   // background-color: $gray;
   position: relative;
@@ -45,6 +47,16 @@ h3 {
   margin: 0 0 30px 0;
   text-align: left;
   font-size: 50px;
+}
+.card-title-small {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+}
+.card-title-small-xs {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 25px;
 }
 .card-description {
   text-align: justify;

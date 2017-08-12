@@ -4,11 +4,15 @@
  * ------------------------------------- */
 html {
   background-color: $black;
-  width: 100vw;
+  // width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 body {
   background-color: transparent;
   color: $white;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   text-align: center;
@@ -22,12 +26,16 @@ h2 {
 h3 {
   margin: 0;
 }
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 .no-margin {
   margin: 0 !important;
 }
 .general-wrapper {
   height: auto;
-  width: 100%;
+  width: 100vw;
   // background-color: $gray;
   position: relative;
   display: flex;

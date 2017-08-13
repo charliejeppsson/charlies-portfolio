@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Charlie Jeppsson - Full stack web developer</title>
-    <meta name="description" content="Developer proficient in Ruby on Rails, JavaScript, HTML/CSS, ActiveRecord, PostgreSQL, Bootstrap, Git, GitHub, Heroku and more! Currently looking for full stack and back-end opportunities.">
+    <title><%= meta_title %></title>
+    <meta name="description" content="<%= meta_description %>">
 
     <!-- Facebook Open Graph data -->
-    <meta property="og:title" content="Charlie Jeppsson - Full stack web developer">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.charliejeppsson.com/">
-    <meta property="og:image" content="meta-portfolio-image.png">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="Developer proficient in Ruby on Rails, JavaScript, HTML/CSS, ActiveRecord, PostgreSQL, Bootstrap, Git, GitHub, Heroku and more! Currently looking for full stack and back-end opportunities." />
+    <meta property="og:title" content="<%= meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
+    <meta property="og:description" content="<%= meta_description %>" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
 
     <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
-
   </head>
   <body>
     <%= render "shared/navbar" %>

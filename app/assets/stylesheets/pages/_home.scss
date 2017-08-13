@@ -70,8 +70,13 @@ h3 {
   text-align: justify;
   // font-family: $header-font;
 }
+.card-description a {
+  cursor: pointer;
+  text-decoration: none;
+}
 .card-description a:hover {
   color: white;
+  text-decoration: none;
 }
 
 // Carousel custom design

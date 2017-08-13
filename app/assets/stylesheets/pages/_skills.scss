@@ -12,19 +12,6 @@
   margin: 0;
   padding: 0;
 }
-.skill-frame {
-  background-color: $lightgray;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-}
-.skill-logo {
-  height: 80px;
-}
 .skill-title {
   margin: 20px 0;
   position: absolute;
@@ -33,51 +20,44 @@
   display: flex;
   justify-content: center;
 }
-
-// Back-end skills
-.back-end-container {
+.skill-title-small {
+  position: static;
+}
+.skills-category {
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  // margin-bottom: 100px;
 }
-// .back-end-skill-title {
-//   height: 100px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-.back-end-skill-logos {
+.skills-category-small {
+  height: auto;
+}
+.skill-logos {
   height: auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-// Front-end skills
-.front-end-container {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  // margin-bottom: 100px;
-}
-// .front-end-skill-title {
-//   height: auto;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-.front-end-skill-logos {
-  height: auto;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+}
+.skill-frame {
+  background-color: $lightgray;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+}
+.skill-logo {
+  height: 70px;
 }
 
 // Slider design
 .carousel-control {
   background-image: none !important;
+}
+.carousel-control-small {
+  height: auto;
+  top: 25px;
 }

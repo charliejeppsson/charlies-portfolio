@@ -63,7 +63,7 @@ figcaption {
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -83,12 +83,17 @@ figcaption {
   bottom: 0 !important;
   background: rgba(0,0,0,0.8);
 }
+.info-buttons {
+  width: auto;
+  height: auto;
+  padding: 10px 0 20px 0;
+}
 .show-btn {
-  position: absolute;
-  top: 0;
-  align-self: center;
-  border: none;
-  background-color: transparent;
+  // position: absolute;
+  // top: 0;
+  // align-self: center;
+  // border: none;
+  // background-color: transparent;
 }
 .show-info {
   cursor: pointer;

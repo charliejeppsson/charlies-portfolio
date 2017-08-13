@@ -40,7 +40,7 @@
 // Image styles for large viewports
 .about-intro-image {
   background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(22,22,22,1.0) 100%), image-url('charlie-in-window-filter-1.jpg');
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -125,7 +125,7 @@
 }
 .about-intro-image-small {
   background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 40%, rgba(22,22,22,1.0) 100%), image-url('charlie-in-window-filter-1.jpg');
-  background-position: center bottom;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }

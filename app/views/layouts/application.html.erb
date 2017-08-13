@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Charlie Jeppsson</title>
+    <title>Charlie Jeppsson - Full stack web developer</title>
+    <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="Charlie Jeppsson - Full stack web developer" />
+    <meta property="og:url" content="http://www.charliejeppsson.com/" />
+
   </head>
   <body>
     <%= render "shared/navbar" %>

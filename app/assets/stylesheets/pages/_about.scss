@@ -104,7 +104,7 @@
 // Custom styles for small viewports
 
 .about-card-small {
-  height: 150px;
+  min-height: 150px;
   display: flex;
   overflow: scroll;
 }

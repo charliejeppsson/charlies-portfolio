@@ -49,8 +49,11 @@
   background-position: top;
   // background-attachment: fixed;
 }
-#app-3 {
-
+#tunebook {
+  background-image: image-url("tunebook-home-page.png");
+  background-size: cover;
+  background-position: top;
+  // background-attachment: fixed;
 }
 
 // For project description slide effects
@@ -63,13 +66,11 @@ figcaption {
   position: absolute;
   display: flex;
   align-items: center;
-  // justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
-
+  z-index: 5;
   color: $white;
-  // padding: 0px 200px;
   text-align: left;
 
   bottom: -92%;
@@ -100,10 +101,12 @@ figcaption {
   background: $black;
   border-radius: 5px 5px 0 0;
   padding: 10px;
+  z-index: 2;
 }
 .hide-info {
   cursor: pointer;
   top: 10px;
+  z-index: 2;
 }
 figcaption h3 {
   margin-bottom: 30px;
@@ -153,6 +156,15 @@ figcaption a:hover, a p:hover  {
 .skill-logo-small {
   height: 25px;
 }
+.skill-logo-small-node {
+  width: 30px;
+}
+.skill-logo-small-express {
+  width: 30px;
+}
+.skill-logo-small-mongodb {
+  height: 30px;
+}
 .skill-frame-small {
   background-color: $lightgray;
   border-radius: 50%;
@@ -162,4 +174,17 @@ figcaption a:hover, a p:hover  {
   justify-content: center;
   align-items: center;
   margin: 0 10px 5px 0;
+}
+.project-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  background: black;
+  opacity: 0;
+}
+.project-link:hover {
+  opacity: 0.1;
 }
